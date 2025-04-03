@@ -9,7 +9,7 @@
     <h3>Cars:</h3>
     {% for car in driver.cars.all %}
       <hr>
-      <p class="text-muted">{{ car.model }} ({{ car.manufacturer }})</p>
+      <p class="text-muted">{{ car.model }} ({{ car.manufacturer.name }})</p>
       {% empty %}
         <p>No cars!</p>
     {% endfor %}
